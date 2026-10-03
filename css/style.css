@@ -65,6 +65,11 @@ a:focus-visible {
   position: relative;
 }
 
+.parallax-layer {
+  translate: 0 var(--parallax-y, 0px);
+  will-change: translate;
+}
+
 .skip-link {
   position: fixed;
   z-index: 20;
@@ -1070,5 +1075,10 @@ p {
   *::after {
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
+  }
+
+  .parallax-layer {
+    translate: 0 0 !important;
+    will-change: auto;
   }
 }
