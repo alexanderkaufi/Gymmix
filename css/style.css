@@ -196,7 +196,7 @@ a:focus-visible {
     transform: translateY(-11px);
   }
 
-  .hero h1 {
+  .hero h2 {
     margin-bottom: 38px;
   }
 
@@ -235,7 +235,7 @@ p {
   margin-top: 0;
 }
 
-.hero h1 {
+.hero h2 {
   max-width: 900px;
   margin-bottom: 22px;
   font-size: clamp(3.25rem, 5.25vw, 6.2rem);
@@ -244,7 +244,7 @@ p {
   line-height: 0.99;
 }
 
-.hero h1 span {
+.hero h2 span {
   color: var(--sand-light);
 }
 
@@ -263,7 +263,7 @@ p {
 }
 
 @media (min-width: 921px) {
-  .hero h1 {
+  .hero h2 {
     margin-bottom: 38px;
   }
 
@@ -429,7 +429,7 @@ p {
 .intro h2,
 .section-heading h2,
 .progress h2,
-.device-note h2,
+.device-note h1,
 .download h2 {
   margin-bottom: 18px;
   font-size: clamp(2rem, 4vw, 3.45rem);
@@ -668,7 +668,7 @@ p {
   margin-bottom: 7px;
 }
 
-.device-note h2 {
+.device-note h1 {
   max-width: 620px;
   margin-bottom: 0;
   font-size: clamp(2rem, 4vw, 3.15rem);
@@ -1023,7 +1023,7 @@ p {
     padding: 14px 0 0;
   }
 
-  .hero h1 {
+  .hero h2 {
     font-size: clamp(3.1rem, 13.2vw, 5.5rem);
   }
 
@@ -1157,7 +1157,7 @@ p {
     padding-top: 22px;
   }
 
-  .device-note h2 {
+  .device-note h1 {
     font-size: clamp(2rem, 9vw, 2.8rem);
   }
 
