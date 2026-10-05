@@ -625,7 +625,6 @@ p {
 }
 
 .device-note-inner {
-  width: min(100%, var(--max-width));
   display: flex;
   justify-content: space-between;
   align-items: center;
