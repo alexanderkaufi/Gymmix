@@ -610,18 +610,49 @@ p {
 }
 
 .device-note-card {
+  position: relative;
   overflow: hidden;
+  isolation: isolate;
   border: 1px solid rgba(244, 240, 232, 0.13);
   border-radius: 28px;
   background: #292928;
   aspect-ratio: 2.81 / 1;
 }
 
+.device-note-card::after {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(26, 26, 25, 0.56) 0%, rgba(26, 26, 25, 0.3) 42%, transparent 76%),
+    linear-gradient(0deg, rgba(26, 26, 25, 0.38), transparent 62%);
+  content: "";
+  pointer-events: none;
+}
+
 .device-note-image {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.device-note-slogan {
+  position: absolute;
+  z-index: 2;
+  bottom: clamp(20px, 3.5vw, 42px);
+  left: clamp(20px, 3.5vw, 42px);
+  display: grid;
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(1.35rem, 4.4vw, 3.5rem);
+  font-weight: 760;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.28);
 }
 
 .device-note-inner {
